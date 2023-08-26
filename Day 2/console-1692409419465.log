@@ -1,0 +1,89 @@
+var a;
+undefined
+typeof a;
+'undefined'
+typeof "Amit";
+'string'
+typeof 102.33;
+'number'
+typeof undefined;
+'undefined'
+typeof true;
+'boolean'
+a=1000244444432424245555555532411412441421
+1.0002444444324242e+39
+Number.isSafeInteger(a);
+false
+Number.MAX_SAFE_INTEGER;
+9007199254740991
+a=9007199254740991n;
+9007199254740991n
+a++;
+9007199254740991n
+a++;
+9007199254740992n
+a++:
+VM477:1 Uncaught SyntaxError: Unexpected token ':'
+a++;
+9007199254740993n
+var salaries=[100,200,300,400,500];
+undefined
+typeof salaries;
+'object'
+salaries instanceof Array;
+true
+typeof Array;
+'function'
+salaries=null;
+null
+typeof salaries;
+'object'
+typeof null
+'object'
+Symbol();
+Symbol()
+Symbol()===Symbol();
+false
+typeof Symbol();
+'symbol'
+typeof Symbol;
+'function'
+typeof Hello;
+'undefined'
+"Luffy"+"Zoro"
+'LuffyZoro'
+a="Luffy"-"Pirate";
+NaN
+isNaN(a)// handling NaN
+true
+a=10/0;
+Infinity
+typeof Infinity;
+'number'
+isFinite(a);
+false
+a=`abcdabcd
+    efghijkl
+    hddssfggga`;
+'abcdabcd\n    efghijkl\n    hddssfggga'
+console.log(a);
+VM1382:1 abcdabcd
+    efghijkl
+    hddssfggga
+undefined
+var t=true;
+undefined
+true + true;
+2
+101+true;
+102
+//big int
+undefined
+typeof BigInt;
+'function'
+likes=BigInt("1234431443414214551421222222222431431415455");
+1234431443414214551421222222222431431415455n
+likes++;
+1234431443414214551421222222222431431415455n
+likes++;
+1234431443414214551421222222222431431415456n
