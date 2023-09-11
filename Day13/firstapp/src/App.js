@@ -1,0 +1,8 @@
+// First Root Component
+// Arrow Function
+
+const App = () => {
+  return <h1>Hello React JS</h1>;
+};
+
+export default App;
