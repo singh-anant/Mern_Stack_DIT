@@ -1,0 +1,6 @@
+Rendering Types-
+1.Static
+2.Dynamic
+3.Conditional Rendering-Ternary Opr ||Logical Opr ||If-else or Switch
+4.Iterative Rendering->Array Traverse->Rendering
+use map for iterative rendering
