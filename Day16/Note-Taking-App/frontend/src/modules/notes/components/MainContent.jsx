@@ -1,12 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-const Main = () => {
+const MainContent = () => {
   return (
     <>
+      {/* <p>Main Content</p> */}
       <Outlet />
     </>
   );
 };
 
-export default Main;
+export default MainContent;

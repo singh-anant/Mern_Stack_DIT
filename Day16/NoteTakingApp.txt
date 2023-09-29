@@ -1,0 +1,23 @@
+Note Taking Application
+Login->Login with google(OAuth)
+
+JSON Placeholder...-for fake calling api.
+
+We have to make such type of app which is scalable.
+Folder-
+module -specific stuff
+shared -common component throughout the app.
+
+page-whole webpage.
+Here Page is still a component(A Big One).
+Still a Single Page Application(SPA).
+component-inside page.
+
+1>Login With Google
+2>we have to redirect to the dashboard after login.(We have to  do routing)
+3>Header-Since Header is common so it will be placed inside shared folder
+4>Using routes for Sidebar, and also we will use NavLink.
+5>Using outlet we can render data in the page rather than opening a new page.
+
+
+Using Context API

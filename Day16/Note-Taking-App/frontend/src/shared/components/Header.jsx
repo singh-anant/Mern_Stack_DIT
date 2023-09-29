@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useLocation } from "react-router-dom";
 import { Avatar } from "@mui/material";
 
 const Header = ({ username, displayPicture }) => {
@@ -29,11 +30,7 @@ const Header = ({ username, displayPicture }) => {
             Welcome {username}
           </Typography>
           <Button color="inherit">Logout</Button>
-          <Avatar
-            alt="U"
-            src="https://lh3.googleusercontent.com/a/ACg8ocJIeMSSWs1VBGHLidVolYXICd-s9_InNFeKy6vZQbEEVQ=s96-c"
-            imageprops={{ referrerPolicy: "no-referrer" }}
-          />
+          <Avatar alt="U" src={displayPicture} />
           <img src="" alt="" />
         </Toolbar>
       </AppBar>

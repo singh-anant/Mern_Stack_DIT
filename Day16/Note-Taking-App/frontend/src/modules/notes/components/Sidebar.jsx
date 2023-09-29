@@ -4,18 +4,20 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
+    // Add and Update will be same component.
+    // While other 3 will be same screen only.
     <>
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/dashboard">Home</NavLink>
       <br />
-      <NavLink to="/add-note">Add A Note</NavLink>
+      <NavLink to="/dashboard/add-note/Update">Update A Note</NavLink>
       <br />
-      <NavLink to="/delete-note">Delete A Note</NavLink>
+      <NavLink to="/dashboard/add-note/Add">Add A Note</NavLink>
       <br />
-      <NavLink to="/view-all">View All Note</NavLink>
+      <NavLink to="/dashboard/view-all?type=delete">Delete A Note</NavLink>
       <br />
-      <NavLink to="/search-note">Search A Note</NavLink>
+      <NavLink to="/dashboard/view-all?type=view">View All Note</NavLink>
       <br />
-      <NavLink to="/update-note">Update A Note</NavLink>
+      <NavLink to="/dashboard/view-all?type=search">Search A Note</NavLink>
     </>
   );
 };

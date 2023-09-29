@@ -9,10 +9,12 @@ const App = () => {
     // It is just like switch case where path is acting as case.
     <Routes>
       <Route path="/" element={<UserPage />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-
-      {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+      {/* This is a nested Routes */}
+      <Route path="/dashboard" element={<Dashboard />}>
+        {/* We should not giv absolute path */}
+        <Route path="add-note/:operationName" element={<Add />} />
+        <Route path="view-all" element={<View />} />
+      </Route>
     </Routes>
   );
 };

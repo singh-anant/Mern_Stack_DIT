@@ -10,7 +10,7 @@ export const OAuth = () => {
     try {
       // If we get user we will get redirected to the Dashboard(useNavigate  will be used.)
       if (user) {
-        // console.log(user);
+        console.log(user);
         // By this mechanism it will be not visible on the dashboard.
         navigate("/dashboard", {
           state: { username: user.displayName, profilePicture: user.photoURL },
@@ -19,7 +19,7 @@ export const OAuth = () => {
         console.log("Problem in fetching....");
       }
     } catch (error) {
-      throw error;
+      console.log(error);
     }
   };
   return (
